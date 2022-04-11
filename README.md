@@ -1,3 +1,2 @@
-#aortiz.github.io
-Recovery-VR
+#Recovery VR
 What comes after surgery O.O
