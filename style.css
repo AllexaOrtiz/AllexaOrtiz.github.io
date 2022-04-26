@@ -1,3 +1,12 @@
 .h1 {
     color: rgb(0, 53, 89);
 }
+.navbar-brand {
+    background-color: #B9D6F2;
+}
+.nav-link {
+    font-size: 20px;
+}
+body {
+    background-color: cadetblue;
+}
