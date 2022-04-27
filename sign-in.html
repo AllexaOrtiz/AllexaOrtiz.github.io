@@ -1,10 +1,4 @@
-<head>
-    <title>AlS 414 Recovery VR Project</title>
-    <meta charset="utf-8"  />
-    <meta name="viewport" content="width=device-width, inital-scale=1"  />
-</head>
-
-    <!--link css and java files under this comment-->
+<!--sign-in.html-->
 <link href="style.css" rel="stylesheet">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -21,22 +15,26 @@
           <a class="nav-link" href="#">About Us</a>
           <a class="nav-link" href="#">Finding Physicians</a>
           <a class="nav-link" href="#">Community</a>
-          <!-- (link to sign in page) <a class="nav-link" href="#">Recovery VR</a>-->
         </div>
       </div>
     </div>
   </nav>
 
-    <div>
-        <a class="nav-link active" aria-current="page" href="sign-in.html">Sign in</a>
-    </div>
+<div>
+    <form> <!--Enter Email and password-->
+        <!--link to a separate page-->
+        <div class="container">
+            <label for="email address">Email Address</label>
+            <input type="text" placeholder="Enter Email Address" name="eaddress" id="email address" required>
 
-        <div class="col-xs-5" style="border: 2px solid black; padding: 20px; margin: 50px; border-radius: 4px">
-            Finding Physicians 
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+
+        <button type="submit" href="recoveryVR.html">Sign in</button>
+        <button type="submit" href="recoveryVR.html">Sign up</button>
+            <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
         </div>
-
-        <div class="col-xs-5" style="border: 2px solid black; padding: 20px; margin: 50px; border-radius: 4px">
-            Community
-        </div>
-
-
+    </form>
+</div>
