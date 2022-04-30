@@ -3,6 +3,7 @@
     font-size: 30px;
     box-shadow: 2px 4px 8px 0;
     height: 75px;
+   /* text-align: right; for the sign in feature, not the nav bar- need to fix*/
 }
 .navbar-nav {
     display: inline;
