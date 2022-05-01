@@ -8,17 +8,20 @@
 <!--sign-in.html-->
 <link href="base.css" rel="stylesheet">
 
+<!-- Headings for pages on website, nav bar-->
 <nav class="navbar navbar-fixed-top">
   <span class="navbar-brand">
     <ul class="nav navbar-nav">
       <li><img class="navbar-logo" src="https://www.kgi.edu//wp-content/uploads/media/GiveWP/kgi-logo-testimonial.jpg"></li>
       <li class="navbar-element">Home</li>
-      <li class="navbar-element"><a href="videos/about-us.html">About Us</a></li>
-      <li class="navbar-element">Finding Physicians</li>
-      <li class="navbar-element">Community</li>
-    </li>
+      <li class="navbar-element"><a href="aboutUS.html">About Us</a></li>
+      <li class="navbar-element"><a href="findphysician.html">Finding Physicians</a></li>
+      <li class="navbar-element"><a href="community.html">Community</a></li>
+      <li class="navbar-element Sign-in">
+        <a class="nav-link active" aria-current="page" href="sign-in.html">Sign in</a></li>
   </ul>
 </span>
+</nav>
 
 <div>
     <form> <!--Enter Email and password-->
@@ -38,3 +41,10 @@
         </div>
     </form>
 </div>
+<!--Css code from this site: https://www.w3schools.com/howto/howto_css_login_form.asp-->
+      <div class="container" style="background-color:#f1f1f1">
+      <!--need to move forgot pass under remember me-->
+      <!--need to space out cancel button and forgot pass-->
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
