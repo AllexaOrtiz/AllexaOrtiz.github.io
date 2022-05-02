@@ -1,31 +1,39 @@
-<!--Recovery VR - Gameplay Page-->
+<head>
+  <title>AlS 414 Recovery VR Project</title>
+  <meta charset="utf-8"  />
+  <meta name="viewport" content="width=device-width, inital-scale=1"  />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+</head>
 
-<link href="style.css" rel="stylesheet">
+<!--revoveryVR.html-->
+<link href="base.css" rel="stylesheet">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-                  <!--Need to change logo image-->
-        <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-      <a class="navbar-brand" href="#">Road to Recovery</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Menu</a>
-          <a class="nav-link" href="#">About Us</a>
-          <a class="nav-link" href="#">Finding Physicians</a>
-          <a class="nav-link" href="#">Community</a>
-        </div>
+<!-- Headings for pages on website, nav bar-->
+<nav class="navbar navbar-fixed-top">
+  <span class="navbar-brand">
+    <ul class="nav navbar-nav">
+      <li><img class="navbar-logo" src="https://www.kgi.edu//wp-content/uploads/media/GiveWP/kgi-logo-testimonial.jpg"></li>
+      <li class="navbar-element">Home</li>
+      <li class="navbar-element"><a href="aboutUS.html">About Us</a></li>
+      <li class="navbar-element"><a href="findphysician.html">Finding Physicians</a></li>
+      <li class="navbar-element"><a href="community.html">Community</a></li>
+      <li class="navbar-element Sign-in">
+        <a class="nav-link active" aria-current="page" href="sign-in.html">Sign in</a></li>
+  </ul>
+</span>
+</nav>
+
+<br>
+<br>
+<br> <!--The button needs to be centered on the page and increase size-->
+<div>
+  <div>
+      <div class="col-xs-5" style="border: 2px solid black; padding: 20px; margin: 50px; border-radius: 4px">
+          <!--Gameplay Simulation-->
+          <!--sign in first to gain acess to gameplay, get it linked to sign in page-->
+          Recovery VR - Gameplay
+          <!--Start Game Button need to be linked to JS?-->
+          <button type="button" class="btn btn-outline-start-game">Start Game</button>
       </div>
-    </div>
-  </nav>
-
-
-    <div class="col-xs-5" style="border: 2px solid black; padding: 20px; margin: 50px; border-radius: 4px">
-        <!--Gameplay Simulation-->
-        <!--sign in first to gain acess to gameplay, get it linked to sign in page-->
-        Recovery VR - Gameplay
-        <!--Start Game Button-->
-        <button type="button" class="btn btn-outline-start-game">Start Game</button>
-    </div>
+  </div>
+</div>
