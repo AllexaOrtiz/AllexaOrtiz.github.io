@@ -50,3 +50,12 @@ border-radius: 10px;
 box-shadow: 0, 0, 10px, 0;
 margin-top: 100px;
 }
+
+/* This section is from the google maps platform website
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
