@@ -9,8 +9,9 @@
     display: inline;
 }
 a {
-    margin-top: -14px;
+    margin-top: -20px;
     color: black;
+    font-size: 25px;
 }
 .navbar-logo {
     height: 50px;
@@ -20,16 +21,12 @@ a {
 }
 .nav-link {
     font-size: 25px;
-}
-.nav-link active {
-    margin-left: 30px;
+    
 }
 .navbar-element {
     margin: 15px;
 }
-.navbar-element Sign-in {
-    margin-top: 16px;
-}
+
 body {
     background-color: whitesmoke;
 }
