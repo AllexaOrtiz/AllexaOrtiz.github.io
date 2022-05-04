@@ -1,14 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <title>AlS 414 Recovery VR Project</title>
   <meta charset="utf-8"  />
-  <meta name="viewport" content="width=device-width, inital-scale=1"  />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <!--Why isn't the line below- link href="base.css" rel="stylesheet"?-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  <link href="base.css">
+  <script defer src="behavior.js"></script>
+  <title>Text Adventure</title>
 </head>
 
 <!--revoveryVR.html-->
-<link href="base.css" rel="stylesheet">
+<!--<link href="base.css" rel="stylesheet"!-->
 
-<!-- Headings for pages on website, nav bar-->
+<!--navbar items-->
 <nav class="navbar navbar-fixed-top">
   <span class="navbar-brand">
     <ul class="nav navbar-nav">
@@ -23,28 +30,22 @@
 </span>
 </nav>
 
-
-
  <!--Include a banner and put button in the center-->
- <!--Replace style in css-->
 <div class="recovery-banner" style="background: #B9D6F2; padding:100px; color:black; font-size:15px; text-align:center;">
   <h1>Recovery VR</h1>
   <p>Click below for more options</p>
 </div>
 
-<br>
-<br>
-<br> <!--The button needs to be centered on the page and increase size-->
-<div>
-  <div>
-      <div class="col-xs-5" style="border: 2px solid black; padding: 20px; margin: 50px; border-radius: 4px">
-          <!--Gameplay Simulation-->
-          <!--sign in first to gain acess to gameplay, get it linked to sign in page-->
-          Recovery VR - Gameplay
-          <!--Start Game Button need to be linked to JS?-->
-          <button type="button" class="btn btn-outline-start-game">Start Game</button>
+<!--Game buttons-->
+<body>
+  <div class="container">
+      <div id="text">Welcome to Text Adventure!</div>
+      <div id="option-buttons" class="btn-grid">
+          <button class="btn">Option 1</button>
+          <button class="btn">Option 2</button>
+          <button class="btn">Option 3</button>
+          <button class="btn">Option 4</button>
       </div>
-  </div>
-</div>
+</body>
 
-<!--Two options for games-->
+</html>
