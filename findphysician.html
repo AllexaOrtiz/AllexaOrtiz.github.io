@@ -11,18 +11,18 @@
 
 <!-- Headings for pages on website, nav bar-->
 <nav class="navbar navbar-fixed-top">
-  <span class="navbar-brand">
-    <ul class="nav navbar-nav">
-      <li><img class="navbar-logo" src="https://www.kgi.edu//wp-content/uploads/media/GiveWP/kgi-logo-testimonial.jpg"></li>
-      <li class="navbar-element"><a href="index.html">Home</a></li>
-      <li class="navbar-element"><a href="aboutUS.html">About Us</a></li>
-      <li class="navbar-element"><a href="findphysician.html">Finding Physicians</a></li>
-      <li class="navbar-element"><a href="community.html">Community</a></li>
-      <li class="navbar-element Sign-in">
-        <a class="nav-link active" aria-current="page" href="sign-in.html">Sign in</a></li>
-  </ul>
-</span>
-</nav>
+    <span class="navbar-brand">
+      <ul class="nav navbar-nav">
+        <li><img class="navbar-logo" src="https://www.kgi.edu//wp-content/uploads/media/GiveWP/kgi-logo-testimonial.jpg"></li>
+        <li class="navbar-element"><a href="index.html">Home</a></li>
+        <li class="navbar-element"><a href="aboutUS.html">About Us</a></li>
+        <li class="navbar-element"><a href="findphysician.html">Finding Physicians</a></li>
+        <li class="navbar-element"><a href="community.html">Community</a></li>
+        <li class="navbar-element Sign-in">
+          <a class="nav-link active" aria-current="page" href="sign-in.html">Sign in</a></li>
+    </ul>
+  </span>
+  </nav>
 
 <!-- Action item: move to find physician page-->
 <!--
@@ -30,25 +30,28 @@
     <img class="Finding-Physicians-img" src="https://www.physiciansweekly.com/wp-content/uploads/2020/08/Diversity-doctor-diverse-race-ethnicity-nurse-physician.jpg" width="75%" height="75%">
     </div>
   -->
-<div class="FP-banner" style="background: #B9D6F2; padding:100px; color:black; font-size:15px; text-align:center; ">
-  <h1>Finding Physicians</h1>
-  <p>View nearby physicians for any questions or concerns about your recovery process.</p>
-</div> 
-
-<!--Page will not be accessible to people with no account-->
-<div>
-  <h3>To access this page, please sign in or sign up by clicking the button below.</h3>
-  <button type="submit"><a href="sign-in.html">Sign in/up</a></button>
-</div>
-
-<div>
-  <!--Search feature-->
-  <!--Map here for finding nearby physician-->
-  <body>
-    <div id="map"></div>
+  <div class="FP-banner" style="background: #B9D6F2; padding:100px; color:black; font-size:15px; text-align:center; ">
+    <h1>Finding Physicians</h1>
+    <p>View nearby physicians for any questions or concerns about your recovery process.</p>
+  </div> 
   
+  <!--Page will not be accessible to people with no account-->
+  <div>
+    <h3>To access this page, please sign in or sign up by clicking the button below.</h3>
+    <button type="submit"><a href="sign-in.html">Sign in/up</a></button>
+  </div>
+  
+  <div>
+<!--Search feature-->
+<!--Map here for finding nearby physician-->
+<body>
+  <div> 
+    <div id="map"></div>
+
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly">
-     </script>
-  </body>
-  </div>
+    </script>
+  </div> 
+</body>
+
+<!--Sign in give access for appointments and reminders-->
