@@ -140,3 +140,5 @@ const textNodes = [
 ]
 
 startGame () //will call this as soon as the page loads
+
+// for every option, have a gif that relates to the consequence of choices
