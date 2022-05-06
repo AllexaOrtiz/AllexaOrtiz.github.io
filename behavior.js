@@ -125,7 +125,7 @@ const textNodes = [
     },
     {
         id: 5,
-        text: 'You get an upset stomach, and the pain is so bad you have to take medication.',
+        text: 'You get an upset stomach, and the pain is so bad you have to take medication. \n Remember not to eat heavy solid foods for a couple of months!',
         options: [
             {
                 text: 'Restart', //want to recall the start game function here
@@ -135,7 +135,7 @@ const textNodes = [
     },
     {
         id: 6,
-        text: "You overfill your stomach and get constipated due to the surgery. You're stuck on the toilet all night.",
+        text: "You overfill your stomach and get constipated due to the surgery. You're stuck on the toilet all night. \n Remember not to eat heavy solid foods for a couple of months!",
         options: [
             {
                 text: 'Restart', //want to recall the start game function here
@@ -161,13 +161,13 @@ const textNodes = [
             {
                 text: 'Buy a burger, fries, and milkshake.',
                 requiredState: (currentState) => (currentState.gotoBK, currentState.healed),
-                setState: {all: true, milkshake: false, fries: false}, //you're getting everything, but you've made recovery progress now
+                setState: {all: true}, //you're getting everything, but you've made recovery progress now
                 nextText: 9 //move onto the next text node
             },
             {
                 text: 'Get a milkshake only.', //
                 requiredState: (currentState) => (currentState.gotoBK, currentState.healed),
-                setState: {milkshake: true, all: false, fries: false},
+                setState: {milkshake: true,},
                 nextText: 10
             },
             {
@@ -275,3 +275,6 @@ const textNodes = [
 startGame () //will call this as soon as the page loads
 
 // for every option, have a gif that relates to the consequence of choices
+
+
+//access to recovery VR open :)
