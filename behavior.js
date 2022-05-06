@@ -10,12 +10,12 @@
 //Game behavior for recoveryVR "simulation"
 //Refers to lines 39 to 51 in the recoveryVR HTML file
 //Refers to lines 41 to 60 in the CSS file
-const textElement = document.getElementById('text')
+const textElement = document.getElementById('gastric')
 const optionButtonsElement = document.getElementById('option-buttons')
 
 let state = {} //keeps track of what items the character has on them
 
-function startGame() {
+function startGame1() {
     state = {} //want to start off with the character having nothing
     showTextNode(1);
 }
@@ -272,7 +272,7 @@ const textNodes = [
     }
 ]
 
-startGame () //will call this as soon as the page loads
+startGame1 () //will call this as soon as the page loads
 
 // for every option, have a gif that relates to the consequence of choices
 
