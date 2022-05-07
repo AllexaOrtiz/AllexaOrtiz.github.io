@@ -295,6 +295,30 @@ startGame1 () //will call this as soon as the page loads
 //access to recovery VR open :)
 
 // COOKIES
-Cookies.set('user', 'Will');
-var username = Cookies.get('user');
-$('#welcome-text').text('Welcome, Will');
+//When a user save profile the profile builder form
+$('save-input').click(function () { 
+    // Set profile info from inputs
+    var userName = $('#username-input').val();
+    var age = $('#age-input').val();
+    var email = $('#email-input').val();
+    var condition = $('#condition-input').val();
+    var injury = $('#injury-input').val();
+
+//Create profile cookie
+    Cookies.set('userName', userName);
+    Cookies.set('age', age);
+    Cookies.set('email', email);
+    Cookies.set('condition', condition);
+    Cookies.set('injury', injury);
+
+//Reload page so cookie can take effect
+    location.reload();
+});
+// If there is a cookie, show welcome message
+var userName = Cookies.get('userName');
+if (userName) {
+    //Hide new user input form
+    $('#new-user-input').hide();
+    //Show welcome message
+    $('#welcome-text').text('Welcome,' + userName);
+}
