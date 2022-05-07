@@ -292,13 +292,26 @@ startGame1 () //will call this as soon as the page loads
 // for every option, have a gif that relates to the consequence of choices
 
 
+
+//sign in cookies
+$('submit-input').click(function () {
+    //Set sign in/sign up inputs
+    var eaddress = $('#eaddress-input').val();
+    var password = $('#password-input').val();
+})
+
+//Create sign-in cookie
+    Cookies.set('eaddress', eaddress);
+    Cookies.set('password', password);
+
 //access to recovery VR open :)
+
 
 // COOKIES
 //When a user save profile the profile builder form
 $('save-input').click(function () { 
     // Set profile info from inputs
-    var userName = $('#username-input').val();
+    var userName = $('#userName-input').val();
     var age = $('#age-input').val();
     var email = $('#email-input').val();
     var condition = $('#condition-input').val();
