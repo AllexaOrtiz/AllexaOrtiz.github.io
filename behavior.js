@@ -291,6 +291,14 @@ startGame1 () //will call this as soon as the page loads
 
 // for every option, have a gif that relates to the consequence of choices
 
+// Populating sign in fields
+// Creating array of objects
+var information = [{'name':'Allexa Ortiz', 'email': 'aortiz@students.kgi.edu', 'age': '23', 'condition': 'Gastric ', 'rank': 5},
+                    {'name': 'John Doe', 'phone': '555-667-7474', 'position': 'Provider', 'rank': 3},
+                    {'name': 'Jose Doe', 'phone': '555-223-3232', 'position': 'Payer', 'rank': 1},
+                    {'name': 'Juan Doe', 'phone': '555-989-1212', 'position': 'Producer', 'rank': 2},
+                    {'name': 'Will Raasch', 'phone': '202-253-7251', 'position': 'Teacher', 'rank': 6}
+                    ];
 
 
 //sign in cookies
