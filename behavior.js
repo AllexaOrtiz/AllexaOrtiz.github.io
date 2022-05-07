@@ -293,3 +293,8 @@ startGame1 () //will call this as soon as the page loads
 
 
 //access to recovery VR open :)
+
+// COOKIES
+Cookies.set('user', 'Will');
+var username = Cookies.get('user');
+$('#welcome-text').text('Welcome, Will');
