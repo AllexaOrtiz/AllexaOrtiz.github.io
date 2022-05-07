@@ -5,7 +5,22 @@
 
 
 //let's add map stuff here! MAP MAP MAP MAP MAP MAP MAP
+//Show Claremont Map when clicked
+$('show-claremont').click(function() {
+    $('#claremont').show();
+});
 
+// Initialize and add the map
+let map;
+//parameters
+function initMap() {
+   map = new google.maps.Map(document.getElementById("map"), {
+       center: { lat: 34.0967, lng: -117.7198},
+       zoom: 14,
+   });
+}
+
+  window.initMap = initMap;
 
 //Game behavior for recoveryVR "simulation"
 //Refers to lines 39 to 51 in the recoveryVR HTML file
