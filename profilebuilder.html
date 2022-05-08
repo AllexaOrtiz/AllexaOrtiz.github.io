@@ -1,5 +1,5 @@
-<!--This page is for profile builder after signing up-->
-
+<!--This page is for profile builder 2 after signing up-->
+<!--Not linked to anything yet, confirm changes and then delete profilebuilder and change this title to that-->
 <head>
     <title>AlS 414 Recovery VR Project</title>
     <meta charset="utf-8"  />
@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
     <script defer src="behavior.js"></script>
     <style>
-      
+      .aligncenter {
+        text-align: center;
+      }
+
       .dropdown-content {
         display: none;
         position: absolute;
@@ -58,84 +61,63 @@
   <p>Please fill out the information below to create your profile and gain access to the rest of the features.</p>
 </div>
 
-<!--Link to the sign up button-->
-<!--Options to select-->
-<!--Name, Age, Email Address, Condition, Injury? or surgery -->
-
-<!--Hoverable dropdown background settings linked to lines __ to ___ -->
-
 
 <!--Profile builder template from this site: https://bbbootstrap.com/snippets/bootstrap-5-myprofile-90806631-->
-<div class="container rounded bg-white mt-5 mb-5">
-  <div class="row">
-      <div class="col-md-3 border-right">
-          <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold"></div>
-          <!-- Removed the email text from the image: Allexa
-            Edogaru</span><span class="text-black-50">edogaru@mail.com.my</span><span> </span></div>
-          -->
-          </div>
-      <div class="col-md-5 border-right">
-          <div class="p-3 py-5">
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4 class="text-center">Profile Builder</h4>
-              </div>
-              <!--If you want the boxes to be the same size, col-md-6 should be 12 here and row mt-2 should be row mt-3- Allexa-->
-              <div class="row mt-2"> 
-                  <div class="col-md-6"><label class="labels">Full Name</label><input type="text" id="userName-input" class="form-control" placeholder="Enter full name" value=""></div>
-              </div>
-              <div class="row mt-3">
-                  <div class="col-md-12"><label class="labels">Age</label><input type="text" id="age-input" class="form-control" placeholder="Enter age" value=""></div>
-                  <div class="col-md-12"><label class="labels">Email Address</label><input type="text" id="email-input" class="form-control" placeholder="Enter email address" value=""></div>
-                  <div class="col-md-12"><label class="labels">Select Procedure</label>
-                  <br>
-                    <!--
-                    <input type="text" id="condition-input" class="form-control" placeholder="Enter condition or procedure" value=""> -->
-                    <div class="dropdown">
-                      <button onclick="myFunction()" class="dropbtn">Procedure</button>
-                      <div id="myDropdown" class="dropdown-content">
-                        <a href="#home">Gastric Bypass</a>
-                        <a href="#about">Traumatic Brain Injury</a>
-                        <!--don't want to link it here, want to save a T/F value and then use that to go to VR
-                        following https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown-->
-                      </div>
-                    </div>
-                  </div>
-                  <body>
-                    <hr>
-                    <br>
-                    <script>
-                      /* When the user clicks on the button, 
-                      toggle between hiding and showing the dropdown content */
-                      function myFunction() {
-                        document.getElementById("myDropdown").classList.toggle("show");
-                      }
-                      
-                      // Close the dropdown if the user clicks outside of it
-                      window.onclick = function(event) {
-                        if (!event.target.matches('.dropbtn')) {
-                          var dropdowns = document.getElementsByClassName("dropdown-content");
-                          var i;
-                          for (i = 0; i < dropdowns.length; i++) {
-                            var openDropdown = dropdowns[i];
-                            if (openDropdown.classList.contains('show')) {
-                              openDropdown.classList.remove('show');
-                            }
-                          }
-                        }
-                      }
-                      </script>
-                    
-                    </body>
-                 <!-- <div class="col-md-12"><label class="labels">Injury?</label><input type="text" id="injury-input" class="form-control" placeholder="Enter injury if applicable" value=""></div>
-              -->
-                </div>
-                <!--Add username and password box below injury input-->
+<!--Image in Circle with Avatar -->
 
+  <div class="container">
+    <h4 class="text-center">Profile Builder</h4>
+
+    <div class="row">
+        <div class="col-sm-3 border-right">
+                <img class="center" width="200px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
+                <span class="font-weight-bold"></span>
+        </div>
+
+        <br>
+    <div class="row mt-3"> 
+        <div class="col-md-12"><label class="labels">Full Name</label><input type="text" id="userName-input" class="form-control" placeholder="Enter full name" value=""></div>
+        <div class="col-md-12"><label class="labels">Age</label><input type="text" id="age-input" class="form-control" placeholder="Enter age" value=""></div>
+        <div class="col-md-12"><label class="labels">Email Address</label><input type="text" id="email-input" class="form-control" placeholder="Enter email address" value=""></div>
+        <div class="col-md-12"><label class="labels">Select Procedure</label>
+        <br>
+                <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Condition/Procedure</button>
+                <br>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">Gastric Bypass</a>
+                    <a href="#about">Traumatic Brain Injury</a>
+                    <!--don't want to link it here, want to save a T/F value and then use that to go to VR
+                    following https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown !-->
+                </div>
+                </div>
+                <br>
+                <button class="btn btn-primary profile-button" type="button">Save Profile</button>
+            </div>
+                <br>
+                <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
                 
-              <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
-          </div>
-      </div>
-  </div>
-</div>
-</div>
-</div>
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                    if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                        }
+                    }
+                    }
+                }
+                </script>
+                
+        </body>
+        <br>
+        <br>
+        <br>

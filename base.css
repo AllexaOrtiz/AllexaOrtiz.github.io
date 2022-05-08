@@ -139,7 +139,7 @@ background-color: #B9D6F2;
 /* From W3 for the sign in page styling
 /* Bordered form */
 form {
-    border: 3px solid #f1f1f1;
+    border: 1 px solid white;
   }
   
   /* Full-width inputs */
@@ -148,20 +148,10 @@ form {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     box-sizing: border-box;
   }
   
-  /* Set a style for all buttons * NEEDS TO BE CHANGED/ 
- /* button {
-    background-color: #04AA6D;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
   
   /* Add a hover effect for buttons */
   button:hover {
@@ -191,3 +181,14 @@ form {
 }*/
 
 /* Community page chatbox styling*/
+.chat-header{
+    color: black;
+    padding:15px;
+}
+
+.chat-body{
+    flex: 1;
+    color:hsl(200, 100%, 30%);
+    background-color: white;
+    padding: 20px 30px;
+}
