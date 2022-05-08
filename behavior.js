@@ -318,7 +318,7 @@ $('submit-input').click(function () {
 // COOKIES
 //When a user save profile the profile builder form
 $('save-input').click(function () { 
-    // Set profile info from inputs
+    //Set profile info from inputs
     var userName = $('#userName-input').val();
     var age = $('#age-input').val();
     var email = $('#email-input').val();
@@ -335,11 +335,28 @@ $('save-input').click(function () {
 //Reload page so cookie can take effect
     location.reload();
 });
-// If there is a cookie, show welcome message
+
+//If there is a cookie, show welcome message
 var userName = Cookies.get('userName');
 if (userName) {
     //Hide new user input form
     $('#new-user-input').hide();
     //Show welcome message
     $('#welcome-text').text('Welcome,' + userName);
+}
+
+//THIS IS A TEST FOR SIGN IN SUBMIT BUTTON
+function validate()
+{
+    var eaddress=document.getElementById("eaddress").value;
+    var password=document.getElementById("password").value;
+    if(eaddress=="aortiz21@students.kgi.edu" && password=="orange")
+    {
+        alert("Login Successfully!");
+        return false;
+    }
+    else
+    {
+        alert("Login Failed! Try again")
+    }
 }

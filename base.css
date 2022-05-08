@@ -96,7 +96,27 @@ margin-top: 100px;
     text-align: center;
 
 }
-/* This section is from the google maps platform website
+
+/* Sign-up page styling*/
+.signup-banner {
+    background: #B9D6F2; 
+    padding:100px; 
+    color:black; 
+    font-size:15px; 
+    text-align: center;
+}
+
+/* Sign-in page styling*/
+.signin-banner {
+    background: #B9D6F2; 
+    padding:100px; 
+    color:black; 
+    font-size:15px; 
+    text-align: center;
+}
+
+
+/* This section is from the google maps platform website*/
 /* Set the size of the div element that contains the map */
 #map {
     height: 100%;
@@ -106,3 +126,8 @@ margin-top: 100px;
   .center{
     text-align: center;
    }
+
+/* Centering the sign up button/text on the sign-in page*/
+.noAccount{
+    text-align: center;
+}

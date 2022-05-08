@@ -24,25 +24,37 @@
 </span>
 </nav>
 
+<!--Banner for signup page-->
+<div class="signin-banner">
+  <h1>Welcome Back!</h1>
+  <p>Sign into your account to gain access to exclusive features!</p>
+</div>
+
+
 <div>
     <form> <!--Enter Email and password-->
-        <!--link to a separate page-->
         <div class="container">
             <label for="email address">Email Address</label>
-            <input type="text" placeholder="Enter Email Address" name="eaddress" id="eaddress-input" required>
+            <input type="text" placeholder="Enter Email Address" name="" id="eaddress" required>
 
             <label for="password">Password</label>
-            <input type="password" placeholder="Enter Password" name="psw" id="password-input" required>
+            <input type="password" placeholder="Enter Password" name="" id="password" required>
 
   
             <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
+            <input type="checkbox" checked="checked" name=""> Remember me
             </label>
         </div>
     </form>
     <div>
-      <button type="submit" href="recoveryVR.html">Sign in</button>
-      <button type="submit" href="profilebuilder.html">Sign up</button>
+      <button type="submit" name="" value="Login" onclick="validate()"><a href="recoveryVR.html">Sign in</a></button>
+    </div>
+    <!--Lead to profile builder page-->
+    <div class="noAccount">
+      <p>
+        Don't have an account? Sign Up Below!
+      </p>
+      <button type="submit"><a href="profilebuilder.html">Sign up</a></button>
     </div>
 </div>
 <!--Css code from this site: https://www.w3schools.com/howto/howto_css_login_form.asp-->
@@ -50,7 +62,7 @@
       <!--need to move forgot pass under remember me-->
       <!--need to space out cancel button and forgot pass-->
       <button type="button" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
+      <span class="psw">Forgot password?</a></span>
       </div>
 
 
