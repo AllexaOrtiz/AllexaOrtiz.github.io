@@ -344,6 +344,7 @@ if (fullName) {
 }
 
 /* THIS IS FOR THE SIGN-IN VALIDATION */
+/* Code adapted from: https://www.youtube.com/watch?v=PkxA6m-NNCY */
 function validate()
 {
     var eaddress=document.getElementById("eaddress").value;
