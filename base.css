@@ -124,7 +124,7 @@ margin-top: 100px;
     height: 100%;
   }
 
-  /* Centering the video on the VR page*/
+  /* Centering the video on the VR page, need to change to vidCenter*/
   .center{
     text-align: center;
    }
@@ -173,6 +173,28 @@ form {
     background-color: #f44336;
   }
   
+<<<<<<< Updated upstream
+=======
+  /* Center the avatar image inside this container */
+  /* What lines of HTML code does line 178-193 refer to? */
+  .imgcontainer {
+    text-align: center;
+    margin: 2px 0 2px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 20%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+
+  
+>>>>>>> Stashed changes
   /* The "Forgot password" text */
   span.psw {
     float: right;
