@@ -157,19 +157,7 @@ form {
   button:hover {
     opacity: 0.8;
   }
-  
-  
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-    span.psw {
-      display: block;
-      float: none;
-    }
-    .cancelbtn {
-      width: 100%;
-    }
-  }
-  
+ 
   /* Gastric Bypass/Traumatic Brain Injury Button Dropdown for Profile Builder page */
 
 /*TEST TO CENTER THE AVATAR IMAGE  
@@ -191,4 +179,49 @@ form {
     color:hsl(200, 100%, 30%);
     background-color: white;
     padding: 20px 30px;
+}
+
+.message{
+    background-color: dodgerblue;
+    padding: 10px;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.user_message{
+    margin-left: auto;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+}
+
+.footer form{
+    display: flex;
+}
+
+form input{
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+form button{
+    width: 100px;
+    height: 56px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:dodgerblue;
+    color: black;
+    cursor: pointer;
+}
+
+form button:hover{
+      background-color: whitesmoke;
+
 }
