@@ -293,11 +293,9 @@ startGame1 () //will call this as soon as the page loads
 
 // Populating sign in fields
 // Creating array of objects
-var information = [{'name':'Allexa Ortiz', 'email': 'aortiz@students.kgi.edu', 'age': '23', 'condition': 'Gastric ', 'rank': 5},
-                    {'name': 'John Doe', 'phone': '555-667-7474', 'position': 'Provider', 'rank': 3},
-                    {'name': 'Jose Doe', 'phone': '555-223-3232', 'position': 'Payer', 'rank': 1},
-                    {'name': 'Juan Doe', 'phone': '555-989-1212', 'position': 'Producer', 'rank': 2},
-                    {'name': 'Will Raasch', 'phone': '202-253-7251', 'position': 'Teacher', 'rank': 6}
+var information = [{'name':'Allexa Ortiz', 'email': 'aortiz21@students.kgi.edu', 'age': '23', 'condition': 'Gastric  Bypass', 'username':'aortiz', 'password':'crackers' },
+                   {'name':'Sophia Sy', 'email': 'ssy21@students.kgi.edu', 'age': '22', 'condition': 'Traumatic Brain Injury', 'username':'ssy', 'password':'cookies'},
+                
                     ];
 
 
@@ -318,45 +316,51 @@ $('submit-input').click(function () {
 // COOKIES
 //When a user save profile the profile builder form
 $('save-input').click(function () { 
-    //Set profile info from inputs
-    var userName = $('#userName-input').val();
+    // Set profile info from inputs
+    var fullName = $('#fullName-input').val();
     var age = $('#age-input').val();
     var email = $('#email-input').val();
     var condition = $('#condition-input').val();
-    var injury = $('#injury-input').val();
+    var zipcode = $('#zipcode-input').val();
+
 
 //Create profile cookie
-    Cookies.set('userName', userName);
+    Cookies.set('fullName', fullName);
     Cookies.set('age', age);
     Cookies.set('email', email);
     Cookies.set('condition', condition);
-    Cookies.set('injury', injury);
+    Cookies.set('zipcode', zipcode);
 
 //Reload page so cookie can take effect
     location.reload();
 });
-
-//If there is a cookie, show welcome message
-var userName = Cookies.get('userName');
-if (userName) {
+// If there is a cookie, show welcome message
+var fullName = Cookies.get('fullName');
+if (fullName) {
     //Hide new user input form
     $('#new-user-input').hide();
     //Show welcome message
-    $('#welcome-text').text('Welcome,' + userName);
+    $('#welcome-text').text('Welcome,' + fullName);
 }
 
-//THIS IS A TEST FOR SIGN IN SUBMIT BUTTON
+/* THIS IS FOR THE SIGN-IN VALIDATION */
 function validate()
 {
     var eaddress=document.getElementById("eaddress").value;
     var password=document.getElementById("password").value;
-    if(eaddress=="aortiz21@students.kgi.edu" && password=="orange")
+    if (eaddress=="aortiz21@students.kgi.edu" && password=="orange")
+
     {
-        alert("Login Successfully!");
+        alert("Login Succesfully!");
         return false;
+
+
     }
     else
     {
-        alert("Login Failed! Try again")
+        alert("Login Failed! Please try again.");
+    
     }
+
 }
+
