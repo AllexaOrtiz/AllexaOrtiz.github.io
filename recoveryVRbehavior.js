@@ -1,11 +1,3 @@
-// calling this behavior because JS controls the behavior of the website
-
-
-//let's add cookies here COOKIES COOKIES COOKIES COOKIES
-
-
-//let's add map stuff here! MAP MAP MAP MAP MAP MAP MAP
-
 //Game behavior for recoveryVR "simulation"
 //Refers to lines 39 to 51 in the recoveryVR HTML file
 //Refers to lines 41 to 60 in the CSS file
@@ -274,6 +266,3 @@ const textNodes = [
 startGame () //will call this as soon as the page loads
 
 // for every option, have a gif that relates to the consequence of choices
-
-
-//access to recovery VR open :)
