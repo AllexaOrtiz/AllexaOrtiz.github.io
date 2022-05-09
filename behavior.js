@@ -64,7 +64,7 @@ function validate()
     if (eaddress=="aortiz21@students.kgi.edu" && password=="orange")
 
     {
-        alert("Login Succesfully!");
+        alert("Login Succesful!");
         return false;
 
     }
