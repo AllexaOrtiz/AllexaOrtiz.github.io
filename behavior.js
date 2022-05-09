@@ -1,27 +1,6 @@
 // calling this behavior because JS controls the behavior of the website
 
 
-//let's add cookies here COOKIES COOKIES COOKIES COOKIES
-
-
-//let's add map stuff here! MAP MAP MAP MAP MAP MAP MAP
-//Show Claremont Map when clicked
-$('show-claremont').click(function() {
-    $('#claremont').show();
-});
-
-// Initialize and add the map
-let map;
-//parameters
-function initMap() {
-   map = new google.maps.Map(document.getElementById("map"), {
-       center: { lat: 34.0967, lng: -117.7198},
-       zoom: 14,
-   });
-}
-
-  window.initMap = initMap;
-
 //Game behavior for recoveryVR "simulation"
 //Refers to lines 39 to 51 in the recoveryVR HTML file
 //Refers to lines 41 to 60 in the CSS file
@@ -310,8 +289,6 @@ $('submit-input').click(function () {
     Cookies.set('eaddress', eaddress);
     Cookies.set('password', password);
 
-//access to recovery VR open :)
-
 
 // COOKIES
 //When a user save profile the profile builder form
@@ -322,6 +299,7 @@ $('save-input').click(function () {
     var email = $('#email-input').val();
     var condition = $('#condition-input').val();
     var zipcode = $('#zipcode-input').val();
+    //We have a zipcode input, but no field in the profile builder form- ALLEXA
 
 
 //Create profile cookie
@@ -334,6 +312,7 @@ $('save-input').click(function () {
 //Reload page so cookie can take effect
     location.reload();
 });
+
 // If there is a cookie, show welcome message
 var fullName = Cookies.get('fullName');
 if (fullName) {
@@ -355,7 +334,6 @@ function validate()
         alert("Login Succesfully!");
         return false;
 
-
     }
     else
     {
@@ -365,3 +343,8 @@ function validate()
 
 }
 
+/* For selecting a hospital on the find physician page--> Should probably call find provider page */
+function selectMap()
+{
+    
+}

@@ -1,0 +1,58 @@
+<!--Finding Physicians, page once user logs in-->
+<head>
+    <title>AlS 414 Recovery VR Project</title>
+    <meta charset="utf-8"  />
+    <meta name="viewport" content="width=device-width, inital-scale=1"  />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  </head>
+
+    <!--link css and java files under this comment-->
+<link href="base.css" rel="stylesheet">
+<body>
+<!-- Headings for pages on website, nav bar-->
+  <nav class="navbar navbar-fixed-top">
+      <span class="navbar-brand">
+        <ul class="nav navbar-nav">
+          <li><img class="navbar-logo" src="https://www.kgi.edu//wp-content/uploads/media/GiveWP/kgi-logo-testimonial.jpg"></li>
+          <li class="navbar-element"><a href="index.html">Home</a></li>
+          <li class="navbar-element"><a href="aboutUS.html">About Us</a></li>
+          <li class="navbar-element"><a href="findphysician.html">Finding Physicians</a></li>
+          <li class="navbar-element"><a href="community.html">Community</a></li>
+          <li class="navbar-element Sign-in">
+            <a class="nav-link active" aria-current="page" href="sign-in.html">Sign in</a></li>
+      </ul>
+    </span>
+    </nav>
+
+<!-- Action item: move to find physician page-->
+  <div class="top-banner">
+    <div class="center" >
+        <h1>Finding Physicians</h1>
+        <img class="Finding-Physicians-img" src="https://www.physiciansweekly.com/wp-content/uploads/2020/08/Diversity-doctor-diverse-race-ethnicity-nurse-physician.jpg" width="50%" height="50%">
+        </div>
+    
+    <p>View nearby physicians for any questions or concerns about your recovery process.</p>
+  </div> 
+
+<!--Page will not be accessible to people with no account, add map feature here-->
+  <div class="center">
+    <div>
+        <div class="container"> 
+            <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Hospital Location Selection</button>
+            <hr>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="map1.html"><b>St. Joseph Hospital</b></a>
+                <br>
+                <a href="map2.html">Culver City Bariatrics</a>
+                <br>
+                <a href="map3.html">USC Bariatric Surgery (HC4)</a>
+                <br>
+            </div>
+            </div>
+        </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d423644.9051269247!2d-118.24224805958528!3d33.94817932931306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d34.1074839!2d-117.70598559999999!4m5!1s0x80dcd9bc650014af%3A0xfd26196b49e538fb!2sgastric%20surgery%20hospitals%20in%20california!3m2!1d33.7820441!2d-117.86542449999999!5e0!3m2!1sen!2sus!4v1652084904181!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <hr>
+    <a href="index.html"><button>Back to Home</button></a>

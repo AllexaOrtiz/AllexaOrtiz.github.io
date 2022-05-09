@@ -1,0 +1,68 @@
+<!--Finding Physicians-->
+<head>
+    <title>AlS 414 Recovery VR Project</title>
+    <meta charset="utf-8"  />
+    <meta name="viewport" content="width=device-width, inital-scale=1"  />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  </head>
+
+    <!--link css and java files under this comment-->
+<link href="base.css" rel="stylesheet">
+<body>
+<!-- Headings for pages on website, nav bar-->
+  <nav class="navbar navbar-fixed-top">
+      <span class="navbar-brand">
+        <ul class="nav navbar-nav">
+          <li><img class="navbar-logo" src="https://www.kgi.edu//wp-content/uploads/media/GiveWP/kgi-logo-testimonial.jpg"></li>
+          <li class="navbar-element"><a href="index.html">Home</a></li>
+          <li class="navbar-element"><a href="aboutUS.html">About Us</a></li>
+          <li class="navbar-element"><a href="findphysician.html">Finding Physicians</a></li>
+          <li class="navbar-element"><a href="community.html">Community</a></li>
+          <li class="navbar-element Sign-in">
+            <a class="nav-link active" aria-current="page" href="sign-in.html">Sign in</a></li>
+      </ul>
+    </span>
+    </nav>
+
+<!-- Action item: move to find physician page-->
+<!--
+<div class="Homepage" >
+    <img class="Finding-Physicians-img" src="https://www.physiciansweekly.com/wp-content/uploads/2020/08/Diversity-doctor-diverse-race-ethnicity-nurse-physician.jpg" width="75%" height="75%">
+    </div>
+  -->
+
+  <div class="top-banner">
+    <h1>Finding Physicians</h1>
+    <p>View nearby physicians for any questions or concerns about your recovery process.</p>
+  </div> 
+
+<!--Page will not be accessible to people with no account-->
+  <div class="center">
+    <h3>To access this page, please sign in or sign up by clicking the button below.</h3>
+    <button type="submit"><a href="sign-in.html">Sign in/up</a></button>
+  </div>
+
+  <!--Search feature-->
+  <!--Map here for finding nearby physician-->
+<!--
+  <div id="large margins">
+    <p class="header_text">Phyicians in Claremont</p>
+    <a href="index.html"><button>Back</button></a>
+    <button id="show-claremont">Claremont</button>
+    <div id="claremont" style="display:none;">
+      <h2>Where we live</h2>
+      <div id="map" style="border: 2px solid black; border-radius: 4px; width: 400px; height: 400px; box-shadow: 2px 1px 1px 1px gray;"></div>
+    </div> 
+  </div>
+  -->
+<!--Custom JS-->   
+  <script src="behavior.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly">
+      </script>
+</body>
+
+<!--Sign in give access for appointments and reminders-->
+
+<!--FOR ALLEXA_CREATE MAP FEATURE-->
