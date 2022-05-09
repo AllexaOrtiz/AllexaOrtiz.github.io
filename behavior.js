@@ -71,6 +71,7 @@ function validate()
     else
     {
         alert("Login Failed! Please try again.");
+        return;
     
     }
 
