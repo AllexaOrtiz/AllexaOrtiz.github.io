@@ -27,7 +27,8 @@ a {
     margin: 15px;
 }
 
-.homepage-banner {
+/*Use this for all the banners by this label, not by about us banner or home banner: ALLEXA*/
+.top-banner {
     background: #B9D6F2;
     padding: 100px;
     color: black;
@@ -38,6 +39,11 @@ a {
     width: 100%;
     height: 60%;
 }
+
+.homepage-des {
+    font-size: 20px;
+}
+
 body {
     background-color: whitesmoke;
 }
@@ -70,6 +76,18 @@ body {
     border-color: black;
 }
 
+/* Formatting for paragraph containers*/
+.container-paragraph {
+    width: 400px;
+    height: auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0, 0, 10px, 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #B9D6F2;
+    }
+
 /* Sign in formatting */
 .container {
 width: 400px;
@@ -77,12 +95,13 @@ height: auto;
 padding: 30px 40px;
 border-radius: 10px;
 box-shadow: 0, 0, 10px, 0;
-margin-top: 100px;
-margin-bottom: 50px;
+margin-top: 20px;
+margin-bottom: 20px;
 background-color: #B9D6F2;
 }
 
-/* Sign up formating/profile builder*/
+
+/* Sign up formating/profile builder ---- Changed this to be consistent across the pages and under the class top-banner
 .profile-banner {
     background: #B9D6F2; 
     padding:100px; 
@@ -91,7 +110,7 @@ background-color: #B9D6F2;
     text-align:center;
 }
 
-/* Finding Physicians styling */
+ Finding Physicians styling
 .FP-banner { 
     background: #B9D6F2; 
     padding:100px; 
@@ -101,7 +120,7 @@ background-color: #B9D6F2;
 
 }
 
-/* Sign-up page styling*/
+/* Sign-up page styling
 .signup-banner {
     background: #B9D6F2; 
     padding:100px; 
@@ -110,7 +129,7 @@ background-color: #B9D6F2;
     text-align: center;
 }
 
-/* Sign-in page styling*/
+/* Sign-in page styling
 .signin-banner {
     background: #B9D6F2; 
     padding:100px; 
@@ -118,7 +137,7 @@ background-color: #B9D6F2;
     font-size:15px; 
     text-align: center;
 }
-
+*/
 
 /* This section is from the google maps platform website*/
 /* Set the size of the div element that contains the map */
@@ -131,10 +150,16 @@ background-color: #B9D6F2;
     text-align: center;
    }
 
-/* Centering the sign up button/text on the sign-in page*/
+/* Putting the text under the vid of the recovery VR page on the left*/
+   .left {
+       text-align: left;
+       padding: 10px 20em;   
+   }
+
+/* Centering the sign up button/text on the sign-in page ---- I just referenced the same centering feature above (line 147) in the html files : ALLEXA
 .noAccount{
     text-align: center;
-}
+} */
 
 /* From W3 for the sign in page styling
 /* Bordered form */
