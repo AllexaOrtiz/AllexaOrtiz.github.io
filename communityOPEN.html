@@ -1,0 +1,67 @@
+<!-- This is for the homepage-->
+<!--Link homepage and homepage logo-->
+<head>
+    <title>AlS 414 Recovery VR Project</title>
+    <meta charset="utf-8"  />
+    <meta name="viewport" content="width=device-width, inital-scale=1"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"/>
+    <script defer src="behavior.js"></script>
+</head>
+
+    <!--link css and java files under this comment-->
+<link href="base.css" rel="stylesheet">
+
+<!-- Headings for pages on website, nav bar-->
+<nav class="navbar navbar-fixed-top">
+  <span class="navbar-brand">
+    <ul class="nav navbar-nav">
+      <li><img class="navbar-logo" src="https://www.kgi.edu//wp-content/uploads/media/GiveWP/kgi-logo-testimonial.jpg"></li>
+      <li class="navbar-element"><a href="index.html">Home</a></li>
+      <li class="navbar-element"><a href="aboutUS.html">About Us</a></li>
+      <li class="navbar-element"><a href="findphysician.html">Finding Physicians</a></li>
+      <li class="navbar-element"><a href="community.html">Community</a></li>
+      <li class="navbar-element Sign-in">
+        <a class="nav-link active" aria-current="page" href="sign-in.html">Sign in</a></li>
+      </li>
+  </ul>
+</span>
+</nav>
+
+<br>
+<br>
+<br>
+<!-- Homepage Image (need to change)-->
+
+<div class="top-banner">
+  <h1>Road to Recovery</h1>
+  <p>Chat</p>
+</div>
+  
+    <hr>
+
+    <div class="container">
+        <div class="chat-header">
+            <div class="center">
+            <h1>R2R Chatbox</h1>
+            <img src="https://unsplash.it/600/400" width="150" height="125">
+        </div>
+        </div>
+        </a>
+          <div class="chat-body">
+            <p class="message">Hi, I just got my surgery and can't even drink water without feeling nauseous. Is this normal?</p>
+          <p class="message user_message">Yes, it's normal!</p> <br>
+          <p class="message user_message">At first, I could only take a few sips here and there.</p></div>
+          <input type="text" id="chat-message">
+          <input type="submit" id="send-message">
+      </div>
+    
+      <script>
+        $('#send-message').click(function() {
+        var message = $('#chat-message').val();
+        var messageHTML = '<p class="chat-message">' + message + '</p>';
+       $('.chat-body').append(messageHTML);
+        });
+      </script>
+    
