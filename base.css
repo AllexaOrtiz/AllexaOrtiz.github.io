@@ -57,6 +57,18 @@ body { /*changed this to be light blue instead of white- what do you think, team
     border-radius: 4px;
 }
 
+/*Font sizes for About Us descriptions*/
+
+.tyler-headshot {
+    font-size: 20px;
+}
+.allexa-headshot {
+    font-size: 20px;
+}
+.sophia-headshot {
+    font-size: 20px;
+}
+
 /*For the game buttons*/
 .btn-grid {
     display: grid;
