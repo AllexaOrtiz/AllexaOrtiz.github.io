@@ -4,13 +4,12 @@
     <meta charset="utf-8"  />
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <!--Why isn't the line below- link href="base.css" rel="stylesheet"?-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <!--Instructions for the game from Javascript-->
     <script defer src="recoveryVRbehavior.js"></script>
-    <title>Text Adventure</title>
   </head>
   
-  <!--<link href="base.css" rel="stylesheet"!-->
+  <!--<link href="base.css" rel="stylesheet"!, you need both this and the bootstrap above to get the proper navbar and page formatting-->
   <link href="base.css" rel="stylesheet">
   
   <!--navbar items-->
@@ -22,19 +21,21 @@
         <li class="navbar-element"><a href="aboutUS.html">About Us</a></li>
         <li class="navbar-element"><a href="findphysicianOPEN.html">Finding Physicians</a></li>
         <li class="navbar-element"><a href="communityOPEN.html">Community</a></li>
+        <!--Originally forgot to put the recovery VR in the nav bar. FIXED-->
+        <li class="navbar-element"><a href="recoveryVRfixed.html">Recovery VR</a></li>
         <li class="navbar-element Sign-in">
           <a class="nav-link active" aria-current="page" href="index.html">Sign out</a></li>
     </ul>
   </span>
   </nav>
 
-   <!--Include a banner and put button in the center-->
+   <!--Description of the page in the banner-->
 <div class="top-banner">
     <h1>Recovery VR</h1>
     <p>Resources about Gastric Bypass Surgery Recovery and Game</p>
   </div>
   
-  <!--video attempt 1-->
+  <!--Adding introductory info about Gastric Bypass Recovery including video and website links-->
   <br>
   <div class="center">
     <h2>Welcome to your guide on Gastric Bypass Surgery Recovery.</h2> <br>
@@ -45,28 +46,36 @@
      <div>
       <a href="https://www.obesitycoverage.com/the-experts-guide-to-gastric-bypass/"><u>The Experts Guide to Gastric Bypass</u></a> 
       <br> <br>
-        <a href="https://www.webmd.com/diet/obesity/what-to-expect-after-weight-loss-surgery#:~:text=Most%20gastric%20bypass%20surgery%20is,in%203%20to%205%20weeks."><u>What to Expect After Weight Loss Surgery</u></a>
+      <!--Broke up the link below for making the code easier to read. Doesn't affect the website.-->
+        <a href="https://www.webmd.com/diet/obesity/what-to-expect-after-weight-loss-surgery#:~:text=Most%20gastric%20bypass%20surgery%20is,
+        in%203%20to%205%20weeks."><u>What to Expect After Weight Loss Surgery</u></a>
         <br> <br>
         <a href="http://surgery.ucla.edu/bariatrics-patient-stories"><u>Bariatrics Patient Stories- Surgery UCLA</u></a>
       </div>
     </div>
 
+  <!--Adding in the game, using not only the center feature, but also the container feature to make the game stand out a little more-->
   <div class="center">
     <div class="container">
       <u><b>Road to Recovery Virtual Reality (R2R VR) Gameplay Background</b></u>
       <br>
+      <!--the class was titled homepage.des, but I also use it for the description on this page too to keep formatting consistent-->
       <div class="homepage.des">
-      As an example of what recovery will look like, your appetite will be drastically reduced and you will only be able to drink liquids and eat soft foods for 2-3 months.
-      Thus, it is important to be careful with your dietary decisions during the start of recovery.
-      However, we understand that it can be hard to adhere to strict dietary restrictions and hope to help you set expectations of
-        what may happen in various scenarios.
-      This way, you can anticipate what symptoms are normal and which require medical attention before symptoms worsen.
-      With that, we welcome you to <u>Recovery Virtual Reality- Gastric Bypass Simulation</u>. <br>
-      For our MVP, we are only showing a text adventure game with various options to choose from, leading to different endings. Give it a shot and see how you do!
+      As an example of what recovery will look like, your appetite will be drastically reduced and you will only be able to drink 
+      liquids and eat soft foods for 2-3 months. Thus, it is important to be careful with your dietary decisions during the start
+      of recovery.However, we understand that it can be hard to adhere to strict dietary restrictions and hope to help you set 
+      expectations of what may happen in various scenarios. This way, you can anticipate what symptoms are normal and which require
+      medical attention before symptoms worsen. With that, we welcome you to <u>Recovery Virtual Reality- Gastric Bypass Simulation</u>. <br>
+      For our MVP, we are only showing a text adventure game with various options to choose from, leading to different endings.
+      Give it a shot and see how you do!
     </div>
+    <!--Still want the simulator in the same container, but something to differentiate. Used a line to do so.-->
     <hr>
     <div><u><b>Gastric Bypass Surgery Recovery Simulator</b></u>
-      <div id="text">Welcome to Text Adventure!</div>
+      <!--Need to pull the correct text depending on which button is clicked. The options 1-4 below are placeholders for the appropriate
+      javascript -->
+      <div id="text"></div>
+      <!--id refers to JS line 7 and class refers to CSS line 59-->
       <div id="option-buttons" class="btn-grid">
           <button class="btn">Option 1</button>
           <button class="btn">Option 2</button>
@@ -76,6 +85,8 @@
     </div>
   </div>
   </div>
+
+<!--Forcing some space below the game so it doesn't come all the way to the bottom of the page-->
 <br>
 <hr>
 <br>

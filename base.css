@@ -1,3 +1,5 @@
+/*Styling of the site, all removed code will be placed at the bottom -- ALLEXA*/
+
 .navbar {
     background-color: #727478;
     font-size: 30px;
@@ -8,7 +10,7 @@
 .navbar-nav {
     display: inline;
 }
-a {
+a { /*what does this go to? ALLEXA*/
     margin-top: -20px;
     color: black;
     font-size: 25px;
@@ -27,7 +29,7 @@ a {
     margin: 15px;
 }
 
-/*Use this for all the banners by this label, not by about us banner or home banner: ALLEXA*/
+/*Use this for all the banners by this label, not by about us banner or home banner: fixed - ALLEXA*/
 .top-banner {
     background: #B9D6F2;
     padding: 100px;
@@ -44,10 +46,10 @@ a {
     font-size: 20px;
 }
 
-body {
-    background-color: whitesmoke;
+body { /*changed this to be light blue instead of white- what do you think, team?*/
+    background-color: rgb(218, 232, 251);
 }
-.col-xs-5 {
+.col-xs-5 { /*I can't find where this feature goes. I may have deleted it? ALLEXA*/
     border: 2px solid black;
     margin-top: 100px;
     margin-left: 25px;
@@ -101,66 +103,10 @@ background-color: #B9D6F2;
 font-size: 20px;
 }
 
-
-/* Sign up formating/profile builder ---- Changed this to be consistent across the pages and under the class top-banner
-.profile-banner {
-    background: #B9D6F2; 
-    padding:100px; 
-    color:black; 
-    font-size:30px; 
-    text-align:center;
-}
-
- Finding Physicians styling
-.FP-banner { 
-    background: #B9D6F2; 
-    padding:100px; 
-    color:black; 
-    font-size:15px; 
-    text-align: center;
-
-}
-
-/* Sign-up page styling
-.signup-banner {
-    background: #B9D6F2; 
-    padding:100px; 
-    color:black; 
-    font-size:15px; 
-    text-align: center;
-}
-
-/* Sign-in page styling
-.signin-banner {
-    background: #B9D6F2; 
-    padding:100px; 
-    color:black; 
-    font-size:15px; 
-    text-align: center;
-}
-*/
-
-/* This section is from the google maps platform website*/
-/* Set the size of the div element that contains the map */
-#map {
-    height: 100%;
-  }
-
-  /* Centering the video on the VR page, need to change to vidCenter*/
+  /*Used for centering various website features*/
   .center{
     text-align: center;
    }
-
-/* Putting the text under the vid of the recovery VR page on the left*/
-   .left {
-       text-align: left;
-       padding: 10px 20em;   
-   }
-
-/* Centering the sign up button/text on the sign-in page ---- I just referenced the same centering feature above (line 147) in the html files : ALLEXA
-.noAccount{
-    text-align: center;
-} */
 
 /* From W3 for the sign in page styling
 /* Bordered form */
@@ -178,21 +124,10 @@ form {
     box-sizing: border-box;
   }
   
-  
   /* Add a hover effect for buttons */
   button:hover {
     opacity: 0.8;
   }
- 
-  /* Gastric Bypass/Traumatic Brain Injury Button Dropdown for Profile Builder page */
-
-/*TEST TO CENTER THE AVATAR IMAGE  
-.center{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}*/
 
 /* Community page chatbox styling*/
 .chat-header{
@@ -251,3 +186,53 @@ form button:hover{
       background-color: whitesmoke;
 
 }
+
+/* Sign up formating/profile builder ---- Changed this to be consistent across the pages and under the class top-banner -- ALLEXA
+.profile-banner {
+    background: #B9D6F2; 
+    padding:100px; 
+    color:black; 
+    font-size:30px; 
+    text-align:center;
+}
+
+ Finding Physicians styling
+.FP-banner { 
+    background: #B9D6F2; 
+    padding:100px; 
+    color:black; 
+    font-size:15px; 
+    text-align: center;
+
+}
+
+/* Sign-up page styling
+.signup-banner {
+    background: #B9D6F2; 
+    padding:100px; 
+    color:black; 
+    font-size:15px; 
+    text-align: center;
+}
+
+/* Sign-in page styling
+.signin-banner {
+    background: #B9D6F2; 
+    padding:100px; 
+    color:black; 
+    font-size:15px; 
+    text-align: center;
+}
+*/
+
+/* Putting the text under the vid of the recovery VR page on the left
+   .left {
+       text-align: left;
+       padding: 10px 20em;   
+   }
+   */
+
+/* Centering the sign up button/text on the sign-in page ---- I just referenced the same centering feature above (line 147) in the html files : ALLEXA
+.noAccount{
+    text-align: center;
+} */
