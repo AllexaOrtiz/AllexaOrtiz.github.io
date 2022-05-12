@@ -1,7 +1,6 @@
 //Game behavior for recoveryVR "simulation"
 //Separated from primary behavior of website
-//Refers to lines 39 to 51 in the recoveryVR HTML file
-//Refers to lines 41 to 60 in the CSS file
+//Gameplay ideas generated based on open community pages on Facebook for Gastric Bypass Surgery
 
 const textElement = document.getElementById('text')
 const optionButtonsElement = document.getElementById('option-buttons')

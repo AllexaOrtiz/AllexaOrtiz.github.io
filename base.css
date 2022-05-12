@@ -154,6 +154,15 @@ form {
     padding: 20px 30px;
 }
 
+.chat-message{
+    background-color: dodgerblue;
+    padding: 10px;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
 .message{
     background-color: dodgerblue;
     padding: 10px;
